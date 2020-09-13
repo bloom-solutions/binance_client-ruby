@@ -3,6 +3,7 @@ module BinanceClient
     include APIClientBase::Client.module(default_opts: :default_opts)
 
     api_action :system_status
+    api_action :account_snapshot
 
     attribute :host
     attribute :api_key
