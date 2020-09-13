@@ -1,7 +1,7 @@
 require_relative 'lib/binance_client/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "binance_client-ruby"
+  spec.name          = "binance_client"
   spec.version       = BinanceClient::VERSION
   spec.authors       = ["AJ Villalobos"]
   spec.email         = ["hi@ajvillalobos.com"]
