@@ -1,7 +1,5 @@
 module BinanceClient
-  class SystemStatusResponse
-    include APIClientBase::Response.module
-
+  class SystemStatusResponse < BaseResponse
     attribute :body, Object, default: :default_body
     attribute :msg, String, lazy: true, default: :default_msg
     attribute :status, String, lazy: true, default: :default_status
