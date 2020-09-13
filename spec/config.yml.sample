@@ -1,0 +1,4 @@
+---
+host: "https://api.binance.com"
+api_key: "your key"
+api_secret: "your secret"
