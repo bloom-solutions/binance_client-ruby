@@ -6,13 +6,6 @@ module BinanceClient
       "/sapi/v1/accountSnapshot"
     end
 
-    def headers
-      {
-        "Content-Type" => "application/json",
-        "X-MBX-APIKEY" => api_key
-      }
-    end
-
     def params
       type = "SPOT"
       limit = 30

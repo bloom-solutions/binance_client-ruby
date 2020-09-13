@@ -4,6 +4,7 @@ module BinanceClient
 
     api_action :system_status
     api_action :account_snapshot
+    api_action :get_all
 
     attribute :host
     attribute :api_key

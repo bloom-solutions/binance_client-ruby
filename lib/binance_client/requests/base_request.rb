@@ -5,6 +5,13 @@ module BinanceClient
     attribute :api_key, String
     attribute :api_secret, String
 
+    def headers
+      {
+        "Content-Type" => "application/json",
+        "X-MBX-APIKEY" => api_key
+      }
+    end
+
     def signature(query)
       OpenSSL::HMAC.hexdigest(
         OpenSSL::Digest.new("sha256"),
