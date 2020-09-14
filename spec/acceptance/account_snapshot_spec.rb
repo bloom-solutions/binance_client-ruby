@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe "get current balances of an account" do
+RSpec.describe "get current balances of an account", vcr: {record: :once} do
   context "for spot accounts" do
     it "returns an array of daily snapshots of the account balances" do
       client = BinanceClient.new(

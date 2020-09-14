@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe "Fetch system status" do
+RSpec.describe "Fetch system status", vcr: {record: :once} do
   it "returns a hash of current api status" do
     client = BinanceClient.new(
       host: CONFIG[:host],
