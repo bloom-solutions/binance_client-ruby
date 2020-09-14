@@ -35,6 +35,7 @@ We provide one method per API endpoint.
 client.system_status
 client.account_snapshot
 client.get_all
+client.book_ticker(symbol: "BTCETH")
 ```
 
 ## Responses
