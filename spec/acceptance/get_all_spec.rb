@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe "Get information of coins for user" do
+RSpec.describe "Get information of coins for user", vcr: { record: :once} do
   it "returns an array of coin details" do
     client = BinanceClient.new(
       host: CONFIG[:host],
@@ -12,8 +12,6 @@ RSpec.describe "Get information of coins for user" do
 
     expect(response.code).to eq 200
     expect(response.body).not_to be_empty
-
-    # we're just checking here that the body is valid structure
-    expect(response.body.first[1].keys).to include("coin")
+    expect(response.body.first["coin"]).not_to be_empty
   end
 end
