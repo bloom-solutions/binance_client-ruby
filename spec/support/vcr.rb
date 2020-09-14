@@ -7,4 +7,10 @@ VCR.configure do |c|
   CONFIG.each do |key, value|
     c.filter_sensitive_data("[#{key}]") { value }
   end
+  c.default_cassette_options = {
+    match_requests_on: [
+      :method,
+      VCR.request_matchers.uri_without_param(:timestamp, :signature)
+    ]
+  }
 end
