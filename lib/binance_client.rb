@@ -20,6 +20,7 @@ require "binance_client/responses/book_ticker_response"
 
 module BinanceClient
   class Error < StandardError; end
+  class BinanceSignatureError < Error; end
 
   include APIClientBase::Base.module
 
