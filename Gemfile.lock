@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    binance_client (0.2.0)
+    binance_client (1.0.0)
       activesupport
       api_client_base
       typhoeus
@@ -90,7 +90,6 @@ PLATFORMS
 
 DEPENDENCIES
   binance_client!
-  pry
   pry-byebug
   rake (~> 12.0)
   rspec (~> 3.0)
