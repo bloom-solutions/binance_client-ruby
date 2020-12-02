@@ -4,6 +4,7 @@ module BinanceClient
 
     attribute :api_key, String
     attribute :api_secret, String
+    attribute :timestamp, Integer, lazy: true, default: :default_timestamp
 
     def headers
       {
@@ -20,7 +21,7 @@ module BinanceClient
       )
     end
 
-    def timestamp
+    def default_timestamp
       DateTime.now.strftime("%Q")
     end
   end
