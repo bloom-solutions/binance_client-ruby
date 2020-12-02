@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Avoid "Signature for this request is not valid" errors by using the same timestamp
+- Remove pry as a development dependency
 
 ## [0.2.0] - 2020-09-14
 ### Added
