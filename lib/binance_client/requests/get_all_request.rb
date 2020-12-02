@@ -7,14 +7,19 @@ module BinanceClient
     end
 
     def query
-      "timestamp=#{timestamp}"
+      uri = Addressable::URI.new(query_values: {
+        timestamp: timestamp,
+      })
+      uri.normalized_query
     end
 
     def params
-      [
-        query,
-        "signature=#{signature(query)}"
-      ].join("&")
+      uri = Addressable::URI.new(query: query)
+      uri.query_values = [
+        uri.query,
+        ["signature", signature(query)],
+      ]
+      uri.normalized_query
     end
   end
 end
