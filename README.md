@@ -21,8 +21,8 @@ Or install it yourself as:
 ## Authenticate
 ```
 client = BinanceClient.new(
-    api_key: "your-api-key",
-    api_secret: "your-api-secret"
+  api_key: "your-api-key",
+  api_secret: "your-api-secret"
 )
 ```
 
