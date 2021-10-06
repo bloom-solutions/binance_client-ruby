@@ -6,6 +6,7 @@ module BinanceClient
     api_action :account_snapshot
     api_action :get_all
     api_action :book_ticker
+    api_action :order_book_depth
 
     attribute :host
     attribute :api_key
