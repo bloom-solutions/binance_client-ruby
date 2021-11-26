@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- Allow easy access to the `used_weight` header in a response by calling `#used_weight(interval)`
+
 ## [1.1.0]
 ### Added
 - `order_book_depth` (`/api/v3/depth`) to get a snapshot of the order book

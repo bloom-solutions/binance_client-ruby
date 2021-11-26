@@ -3,7 +3,7 @@ PATH
   specs:
     binance_client (1.1.0)
       activesupport
-      api_client_base
+      api_client_base (~> 1.11)
       typhoeus
 
 GEM
@@ -17,7 +17,7 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    api_client_base (1.10.0)
+    api_client_base (1.11.0)
       activesupport (>= 3.0)
       gem_config (>= 0.3.1)
       virtus (>= 1.0)
@@ -40,7 +40,7 @@ GEM
     ffi (1.15.4)
     gem_config (0.3.2)
     hashdiff (1.0.1)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     method_source (1.0.0)
@@ -84,7 +84,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    zeitwerk (2.4.2)
+    zeitwerk (2.5.1)
 
 PLATFORMS
   ruby
@@ -99,4 +99,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.2.24
+   2.2.28

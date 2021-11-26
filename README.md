@@ -42,6 +42,27 @@ client.order_book_depth(symbol: "BTCUSDT", limit: 100)
 ## Responses
 The default representation of response data is a JSON hash
 
+## Hooks
+You can set a hook to do application-specific things per request. This is useful when monitoring the rate limits:
+
+```ruby
+BinanceClient.after_request = DoSomethingAfterBinanceRequest
+```
+
+What you assign can be a proc -- it just needs to respond to `call` and accept the `BinanceClient` response object:
+
+```ruby
+class DoSomethingAfterBinanceRequest
+
+  def self.call(response)
+    one_minute_weight = response.used_weight("1m")
+    if one_minute_weight > 1200
+      Rails.logger.info "Looks like we've hit the request limit!"
+    end
+  end
+
+end
+```
 
 ## Development
 Edit the `config.yml.sample` with your own credentials for testing
