@@ -10,6 +10,16 @@ module BinanceClient
       val.to_i
     end
 
+    def message
+      body["message"]
+    end
+
+    def body_code
+      val = body["code"]
+      return nil if val.nil?
+      val.to_i
+    end
+
     private
 
     def default_body
