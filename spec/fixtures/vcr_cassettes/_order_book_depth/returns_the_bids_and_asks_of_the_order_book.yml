@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/api/v3/depth?limit=20&symbol=BTCUSDT"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - ''
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1326'
+      Date:
+      - Wed, 06 Oct 2021 08:52:45 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Uuid:
+      - 3b617394-2267-412d-8baf-5839e44e0040
+      X-Mbx-Used-Weight:
+      - '1'
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1f081e139ee67b99eb3c94017b3f3d84.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ORD50-C1
+      X-Amz-Cf-Id:
+      - fN8UOtDqM1acblMD9MS5kN3qXInQCv4gqhJmkE-kauvs7_8MGiExqA==
+    body:
+      encoding: UTF-8
+      string: '{"lastUpdateId":14122734928,"bids":[["50730.00000000","0.44139000"],["50726.91000000","0.01000000"],["50724.93000000","0.13433000"],["50724.92000000","0.23500000"],["50724.57000000","0.02000000"],["50724.11000000","0.02000000"],["50724.05000000","0.01000000"],["50723.42000000","0.02000000"],["50723.40000000","0.02000000"],["50723.28000000","0.41158000"],["50723.25000000","0.20569000"],["50723.24000000","0.83272000"],["50723.03000000","0.07688000"],["50723.02000000","0.13733000"],["50722.07000000","0.02000000"],["50721.50000000","0.02000000"],["50721.38000000","0.02000000"],["50721.26000000","0.11677000"],["50721.25000000","1.07549000"],["50721.24000000","0.07688000"]],"asks":[["50730.01000000","4.68140000"],["50731.74000000","0.00500000"],["50733.86000000","0.04926000"],["50735.08000000","0.11677000"],["50735.09000000","0.23500000"],["50736.14000000","0.04500000"],["50736.15000000","0.10909000"],["50736.31000000","0.03671000"],["50736.66000000","0.13307000"],["50738.02000000","0.09853000"],["50739.19000000","0.00073000"],["50739.98000000","0.02000000"],["50740.00000000","0.04395000"],["50740.91000000","0.00986000"],["50741.98000000","0.00986000"],["50743.17000000","0.01000000"],["50743.61000000","0.00800000"],["50743.92000000","0.23500000"],["50744.02000000","0.00389000"],["50744.70000000","0.20895000"]]}'
+  recorded_at: Wed, 06 Oct 2021 08:52:45 GMT
+recorded_with: VCR 6.0.0

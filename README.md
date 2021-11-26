@@ -21,8 +21,8 @@ Or install it yourself as:
 ## Authenticate
 ```
 client = BinanceClient.new(
-    api_key: "your-api-key",
-    api_secret: "your-api-secret"
+  api_key: "your-api-key",
+  api_secret: "your-api-secret"
 )
 ```
 
@@ -36,6 +36,7 @@ client.system_status
 client.account_snapshot
 client.get_all
 client.book_ticker(symbol: "BTCETH")
+client.order_book_depth(symbol: "BTCUSDT", limit: 100)
 ```
 
 ## Responses

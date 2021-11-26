@@ -11,7 +11,7 @@ RSpec.describe "Get information of coins for user", vcr: { record: :once} do
     response = client.get_all
 
     aggregate_failures do
-      expect(response.code).to eq(200), response.body
+      expect(response.code).to eq(200)
       expect(response.body).not_to be_empty
       expect(response.body.first["coin"]).not_to be_empty
     end

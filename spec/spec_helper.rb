@@ -3,6 +3,7 @@ require "binance_client"
 require "pry"
 require "pathname"
 require "yaml"
+require "rspec/its"
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))
 CONFIG_PATH = SPEC_DIR.join("config.yml")
