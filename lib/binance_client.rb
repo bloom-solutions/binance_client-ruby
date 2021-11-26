@@ -13,6 +13,7 @@ require "binance_client/models/order_book"
 require "binance_client/models/asset_balance"
 
 require "binance_client/requests/base_request"
+require "binance_client/requests/authenticated_base_request"
 require "binance_client/responses/base_response"
 require "binance_client/requests/system_status_request"
 require "binance_client/requests/account_snapshot_request"
