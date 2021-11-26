@@ -7,6 +7,7 @@ module BinanceClient
     api_action :get_all
     api_action :book_ticker
     api_action :order_book_depth
+    api_action :sub_account_assets, args: [:email]
 
     attribute :host
     attribute :api_key

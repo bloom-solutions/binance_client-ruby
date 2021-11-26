@@ -2,3 +2,6 @@
 host: "https://api.binance.com"
 api_key: "your key"
 api_secret: "your secret"
+
+# When recording this must be an account with a balance history
+sub_account_email: "some@subaccount.com"

@@ -1,28 +1,14 @@
 module BinanceClient
-  class AccountSnapshotRequest < BaseRequest
+  class AccountSnapshotRequest < AuthenticatedBaseRequest
     private
 
     def path
       "/sapi/v1/accountSnapshot"
     end
 
-    def params
-      type = "SPOT"
-      limit = 30
-      query = query(type: type, limit: limit)
-
-      [
-        query,
-        "signature=#{signature(query)}"
-      ].join("&")
+    def params_without_signature
+      { type: "SPOT", limit: 30 }
     end
 
-    def query(options={})
-      [
-        "type=#{options[:type]}",
-        "timestamp=#{timestamp}",
-        "limit=#{options[:limit]}",
-      ].join("&")
-    end
   end
 end
