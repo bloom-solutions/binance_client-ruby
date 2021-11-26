@@ -41,5 +41,35 @@ module BinanceClient
       end
     end
 
+    describe "#body_code" do
+      let(:response) { described_class.new(body: body) }
+
+      context "code exists" do
+        let(:body) { {"code" => "-321"} }
+
+        it "returns the value of 'code' as Integer" do
+          expect(response.body_code).to eq -321
+        end
+      end
+
+      context "code does not exist" do
+        let(:body) { {} }
+
+        it "returns the value of 'code' as Integer" do
+          expect(response.body_code).to be_nil
+        end
+      end
+    end
+
+    describe "#message" do
+      let(:response) { described_class.new(body: body) }
+
+      let(:body) { {"message" => "Hi there"} }
+
+      it "returns the value of 'message'" do
+        expect(response.message).to eq "Hi there"
+      end
+    end
+
   end
 end

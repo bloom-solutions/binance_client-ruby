@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Allow easy access to the `used_weight` header in a response by calling `#used_weight(interval)`
 - `#sub_account_assets` to get the assets of a sub-account
+- `#body_code` to return the value of "code" in the body, if it exists
+- `#message` to return the value of "message" in the body, if it exists
 
 ## [1.1.0]
 ### Added
