@@ -4,8 +4,6 @@ RSpec.describe "#order_book_depth", vcr: {record: :once} do
   let(:client) do
     BinanceClient.new(
       host: CONFIG[:host],
-      key: CONFIG[:api_key],
-      secret: CONFIG[:api_secret]
     )
   end
 
