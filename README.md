@@ -46,15 +46,15 @@ The default representation of response data is a JSON hash
 You can set a hook to do application-specific things per request. This is useful when monitoring the rate limits:
 
 ```ruby
-BinanceClient.after_request = DoSomethingAfterBinanceRequest
+BinanceClient.configuration.after_response = DoSomethingAfterBinanceResponse
 ```
 
 What you assign can be a proc -- it just needs to respond to `call` and accept the `BinanceClient` response object:
 
 ```ruby
-class DoSomethingAfterBinanceRequest
+class DoSomethingAfterBinanceResponse
 
-  def self.call(response)
+  def self.call(request, response)
     one_minute_weight = response.used_weight("1m")
     if one_minute_weight > 1200
       Rails.logger.info "Looks like we've hit the request limit!"
