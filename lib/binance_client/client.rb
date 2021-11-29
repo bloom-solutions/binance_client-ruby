@@ -12,11 +12,12 @@ module BinanceClient
     attribute :host
     attribute :api_key
     attribute :api_secret
+    attribute :proxy
 
     private
 
     def default_opts
-      {host: host, api_key: api_key, api_secret: api_secret}
+      {host: host, api_key: api_key, api_secret: api_secret, proxy: proxy}
     end
   end
 end

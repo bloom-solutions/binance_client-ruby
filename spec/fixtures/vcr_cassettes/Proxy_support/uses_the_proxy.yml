@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/api/v3/ticker/bookTicker?symbol=BTCUSDT"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - ''
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '120'
+      Date:
+      - Mon, 29 Nov 2021 05:10:13 GMT
+      Server:
+      - nginx
+      X-Mbx-Uuid:
+      - 4187c56a-9429-4091-91a4-e56d13d7141c
+      X-Mbx-Used-Weight:
+      - '12'
+      X-Mbx-Used-Weight-1m:
+      - '12'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 234e9be7d7243ea51bdddd284d99c552.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - NRT12-C5
+      X-Amz-Cf-Id:
+      - 2gFgGlVAtMR9cGSrhPnFeqy5E0asNwymqAxU-ovPQ_5UWqJ6HZzrQw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"BTCUSDT","bidPrice":"57267.32000000","bidQty":"0.26296000","askPrice":"57267.33000000","askQty":"0.33400000"}'
+  recorded_at: Mon, 29 Nov 2021 05:10:13 GMT
+recorded_with: VCR 6.0.0
