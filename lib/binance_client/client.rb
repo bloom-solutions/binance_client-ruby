@@ -8,6 +8,7 @@ module BinanceClient
     api_action :book_ticker
     api_action :order_book_depth
     api_action :sub_account_assets, args: [:email]
+    api_action :sub_account_deposit_address, args: [:email, :coin]
 
     attribute :host
     attribute :api_key
