@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/sapi/v1/capital/deposit/subAddress?coin=BTC&email=[sub_account_email]&signature=d1418b0469b530642ffdb59a75af222240281d5a95f05d057fcaf4240de73bd9&timestamp=1638257533344"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '152'
+      Date:
+      - Tue, 30 Nov 2021 07:32:13 GMT
+      Server:
+      - nginx
+      X-Sapi-Used-Ip-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b81cb31a4bdcef18545ac67bb3f11b5c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MNL50-C1
+      X-Amz-Cf-Id:
+      - maQhz0iYA-30Aj2TyvTnolH6csFyvXXoCibJLn3Ad0WN-KzBwLVLNw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"coin":"BTC","address":"1C1Gfnfrxgyv5QsSPxoZMpfybBjbXsvPRA","tag":"","url":"https://blockchair.com/bitcoin/address/1C1Gfnfrxgyv5QsSPxoZMpfybBjbXsvPRA"}'
+  recorded_at: Tue, 30 Nov 2021 07:32:13 GMT
+recorded_with: VCR 6.0.0

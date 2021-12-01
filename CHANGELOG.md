@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add factories for use in app development
+- Add `#sub_account_deposit_address`
 
 ## [1.3.0] - 2021-11-29
 ### Added
