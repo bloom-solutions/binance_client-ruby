@@ -67,6 +67,10 @@ end
 ## Development
 Edit the `config.yml.sample` with your own credentials for testing
 
+## Factories
+
+To make testing easier in your app, `require "binance_client/factories"` to get access to factories of the models.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/bloom-solutions/binance_client. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/bloom-solutions/binance_client/blob/master/CODE_OF_CONDUCT.md).
