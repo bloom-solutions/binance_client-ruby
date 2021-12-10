@@ -42,6 +42,7 @@ module BinanceClient
     has :host, classes: String, default: DEFAULT_HOST
     has :api_key, classes: String
     has :api_secret, classes: String
+    has :recv_window, classes: [NilClass, Integer]
     has :proxy
   end
 end
