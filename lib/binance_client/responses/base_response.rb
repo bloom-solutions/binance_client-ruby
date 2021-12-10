@@ -4,10 +4,12 @@ module BinanceClient
 
     attribute :body, Object, lazy: true, default: :default_body
 
-    def used_weight(interval)
-      val = header("X-MBX-USED-WEIGHT-#{interval}")
-      return nil if val.nil?
-      val.to_i
+    def used_weights
+      @used_weights ||= headers.each_with_object({}) do |(key, value), hash|
+        next if not key.include?("USED")
+        next if not key.include?("WEIGHT")
+        hash[key] = value
+      end
     end
 
     def message
