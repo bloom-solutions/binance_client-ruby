@@ -2,6 +2,7 @@ module BinanceClient
   class Client
     include APIClientBase::Client.module(default_opts: :default_opts)
 
+    api_action :account
     api_action :system_status
     api_action :account_snapshot
     api_action :get_all

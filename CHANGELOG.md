@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - `recv_window` configuration to set `recvWindow`
+- `#account` call to get the `/api/v3/account` info
 
 ### Added
 - `used_weights` to responses
