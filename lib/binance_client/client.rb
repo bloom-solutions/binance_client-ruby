@@ -2,6 +2,7 @@ module BinanceClient
   class Client
     include APIClientBase::Client.module(default_opts: :default_opts)
 
+    api_action :account
     api_action :system_status
     api_action :account_snapshot
     api_action :get_all
@@ -14,11 +15,18 @@ module BinanceClient
     attribute :api_key
     attribute :api_secret
     attribute :proxy
+    attribute :recv_window
 
     private
 
     def default_opts
-      {host: host, api_key: api_key, api_secret: api_secret, proxy: proxy}
+      {
+        host: host,
+        api_key: api_key,
+        api_secret: api_secret,
+        proxy: proxy,
+        recv_window: recv_window,
+      }
     end
   end
 end
