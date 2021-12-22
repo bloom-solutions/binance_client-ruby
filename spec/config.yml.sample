@@ -7,9 +7,14 @@ api_secret: "your secret"
 
 # To test specific enpoints with sub account credentials
 # When recording this must be an account with a balance history
+sub_account_id: "1321"
 sub_account_api_key: sub_account_api_key
 sub_account_api_secret: sub_account_api_secret
 sub_account_email: "some@subaccount.com"
+# Pass a date where a deposit exists for the sub account above
+# Only required when re-recording
+# Deposit must have occurred at most 6 days after the given date
+sub_account_deposit_window_start: 2021-11-30
 
 # When recording the proxy spec
 proxy: http://myproxy

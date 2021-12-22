@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/sapi/v1/broker/subAccount/depositHist?coin=&endTime=1638748800000&limit=&offset=&recvWindow=6000&signature=c14c244cae3368d330ed7593a7bfcde7d01a963fe69810c35aae9a5365fb7dce&startTime=1638230400000&status=&subAccountId=&timestamp=1640136829510"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '336'
+      Date:
+      - Wed, 22 Dec 2021 01:33:50 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Sapi-Used-Ip-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a6cbb929633b20ad31d21445adadd777.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MNL50-C1
+      X-Amz-Cf-Id:
+      - YDkHWftrCeXAxPDWntDL86_Gdzc2STNY_U99-M0WzhuxslCvsOTpYw==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"subAccountId":"583128401386455041","amount":"0.00017","coin":"BTC","network":"BTC","status":1,"address":"1C1Gfnfrxgyv5QsSPxoZMpfybBjbXsvPRA","addressTag":"","txId":"c25c6089ae66047c6c79dcc7d6fe535c0ab44b0337b12710723df741615f2713","insertTime":1638465908000,"sourceAddress":"3HCG7M77JYyShvuYQzpxCchymWwWfcT8Dw","confirmTimes":"1/1"}]'
+  recorded_at: Wed, 22 Dec 2021 01:33:50 GMT
+recorded_with: VCR 6.0.0
