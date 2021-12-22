@@ -39,6 +39,8 @@ client.book_ticker(symbol: "BTCETH")
 client.order_book_depth(symbol: "BTCUSDT", limit: 100)
 ```
 
+See `spec/acceptance` for all calls.
+
 ## Responses
 The default representation of response data is a JSON hash
 
