@@ -7,7 +7,6 @@ module BinanceClient
       address_tag
       amount
       coin
-      insert_time
       network
       status
       tx_id
@@ -25,6 +24,10 @@ module BinanceClient
       define_method method_name do
         raw_hash[method_name.to_s.camelcase(:lower)]
       end
+    end
+
+    def insert_time
+      Time.at(raw_hash["insertTime"] / 1_000)
     end
 
   end
