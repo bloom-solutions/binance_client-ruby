@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - `Deposit#insert_time` returns `Time` and not an Integer of milliseconds
 
+### Added
+- Add Deposit, RateLimit factories
+
 ## [2.1.0]
 ### Added
 - `exchange_info` endpoint
