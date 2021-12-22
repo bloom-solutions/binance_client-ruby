@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `exchange_info` endpoint
 - `sub_account_deposit_history` endpoint
 
-## [1.5.0]
+## [2.0.0]
 ### Changed
 - Remove `used_weight` from responses
 
