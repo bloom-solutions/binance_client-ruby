@@ -55,10 +55,7 @@ What you assign can be a proc -- it just needs to respond to `call` and accept t
 class DoSomethingAfterBinanceResponse
 
   def self.call(request, response)
-    one_minute_weight = response.used_weight("1m")
-    if one_minute_weight > 1200
-      Rails.logger.info "Looks like we've hit the request limit!"
-    end
+    response.used_weights # Ruby hash of the headers of all the possible used weights
   end
 
 end
