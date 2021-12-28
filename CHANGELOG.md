@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - `Coin#network_list` is initialized properly
+- Return decimal for the following methods of `Network`:
+  - `#withdraw_fee`
+  - `#withdraw_integer_multiple`
+  - `#withdraw_max`
+  - `#withdraw_min`
 
 ## [3.0.0]
 ### Changed

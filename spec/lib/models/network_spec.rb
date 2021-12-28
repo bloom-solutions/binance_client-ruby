@@ -20,7 +20,7 @@ module BinanceClient
         "withdrawEnable" => false,
         "withdrawFee" => "0.00000220",
         "withdrawIntegerMultiple" => "0.00000001",
-        "withdrawMax" => "9999999999.99999999",
+        "withdrawMax" => "999.99",
         "withdrawMin" => "0.00000440",
         "sameAddress" => true,
       }
@@ -45,10 +45,10 @@ module BinanceClient
     its(:withdraw_desc) { is_expected.to eq "Wallet Maintenance" }
     its(:withdraw_enable) { is_expected.to be false }
     its(:withdraw_enabled?) { is_expected.to be false }
-    its(:withdraw_fee) { is_expected.to eq "0.00000220" }
-    its(:withdraw_integer_multiple) { is_expected.to eq "0.00000001" }
-    its(:withdraw_max) { is_expected.to eq "9999999999.99999999" }
-    its(:withdraw_min) { is_expected.to eq "0.00000440" }
+    its(:withdraw_fee) { is_expected.to eq 0.00000220 }
+    its(:withdraw_integer_multiple) { is_expected.to eq 0.00000001 }
+    its(:withdraw_max) { is_expected.to eq 999.99 }
+    its(:withdraw_min) { is_expected.to eq 0.0000044 }
     its(:same_address) { is_expected.to be true }
     its(:same_address?) { is_expected.to be true }
 
