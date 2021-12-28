@@ -5,7 +5,7 @@ module BinanceClient
     api_action :account
     api_action :system_status
     api_action :account_snapshot
-    api_action :get_all
+    api_action :coins_info
     api_action :exchange_info
     api_action :book_ticker
     api_action :order_book_depth

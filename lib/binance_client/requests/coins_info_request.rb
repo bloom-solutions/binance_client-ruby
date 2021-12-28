@@ -1,5 +1,5 @@
 module BinanceClient
-  class GetAllRequest < AuthenticatedBaseRequest
+  class CoinsInfoRequest < AuthenticatedBaseRequest
     private
 
     def path

@@ -7,7 +7,6 @@ RSpec.describe "Get account information", vcr: {record: :once} do
       host: CONFIG[:host],
       api_key: CONFIG[:sub_account_api_key],
       api_secret: CONFIG[:sub_account_api_secret],
-      recv_window: 60_000, # avoid signature error
     )
 
     response = client.account
