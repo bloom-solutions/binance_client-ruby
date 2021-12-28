@@ -19,6 +19,11 @@ RSpec.describe "Get information of coins for user", vcr: { record: :once} do
       BinanceClient::Coin::METHODS.each do |method_name|
         expect(coin.send(method_name)).to_not be_nil
       end
+
+      network = coin.network_list.sample
+      BinanceClient::Network::METHODS.each do |method_name|
+        expect(network.send(method_name)).to_not be_nil
+      end
     end
   end
 end
