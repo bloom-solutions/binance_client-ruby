@@ -3,12 +3,8 @@ module BinanceClient
 
     STR_METHODS = %i[
       coin
-      deposit_all_enable
-      is_legal_money
       name
-      trading
-      withdraw_all_enable
-    ]
+    ].freeze
 
     DECIMAL_METHODS = %i[
       free
@@ -18,9 +14,7 @@ module BinanceClient
       locked
       storage
       withdrawing
-    ]
-
-    METHODS = STR_METHODS + DECIMAL_METHODS
+    ].freeze
 
     BOOL_MAP = {
       deposit_all_enable: :deposit_all_enabled?,
@@ -28,6 +22,8 @@ module BinanceClient
       trading: :trading?,
       withdraw_all_enable: :withdraw_all_enabled?,
     }.freeze
+
+    METHODS = (STR_METHODS + DECIMAL_METHODS + BOOL_MAP.keys).freeze
 
     attr_accessor :raw_hash
     attr_writer *METHODS
@@ -55,6 +51,12 @@ module BinanceClient
     end
 
     BOOL_MAP.each do |original_method_name, alias_method_name|
+      define_method original_method_name do
+        memoize_results "@#{original_method_name}" do
+          raw_hash[original_method_name.to_s.camelcase(:lower)]
+        end
+      end
+
       alias_method alias_method_name, original_method_name
     end
 
