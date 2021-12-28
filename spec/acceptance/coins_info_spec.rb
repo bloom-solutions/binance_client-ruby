@@ -13,7 +13,12 @@ RSpec.describe "Get information of coins for user", vcr: { record: :once} do
     aggregate_failures do
       expect(response).to be_success
       expect(response.coins).not_to be_empty
-      expect(response.coins.first.coin).to be_a String
+
+      coin = response.coins.sample
+
+      BinanceClient::Coin::METHODS.each do |method_name|
+        expect(coin.send(method_name)).to_not be_nil
+      end
     end
   end
 end
