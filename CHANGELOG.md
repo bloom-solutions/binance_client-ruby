@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
-- Rename `#get_all` to `#coins_info`
+- Rename `#get_all` to `#coins_info` and give access to info via the response's `#coins` method
 
 ### Fixed
 - `Deposit#insert_time` returns `Time` and not an Integer of milliseconds

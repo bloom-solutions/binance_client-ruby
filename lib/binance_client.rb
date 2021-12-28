@@ -19,6 +19,8 @@ require "binance_client/models/market"
 require "binance_client/models/market_filter"
 require "binance_client/models/rate_limit"
 require "binance_client/models/deposit"
+require "binance_client/models/network"
+require "binance_client/models/coin"
 
 require "binance_client/requests/base_request"
 require "binance_client/requests/authenticated_base_request"
