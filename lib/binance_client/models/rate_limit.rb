@@ -1,6 +1,7 @@
 module BinanceClient
-  class RateLimit
+  class RateLimit < BaseModel
 
+    INTERVALS = %w[SECOND MINUTE DAY].freeze
     METHODS = %i[
       rate_limit_type
       interval
@@ -8,15 +9,26 @@ module BinanceClient
       limit
     ].freeze
 
-    attr_reader :raw_hash
+    attr_accessor :raw_hash
+    attr_writer *METHODS
 
-    def initialize(raw_hash:)
-      @raw_hash = raw_hash
+    def initialize(**kwargs)
+      kwargs.each do |key, value|
+        self.send("#{key}=", value)
+      end
     end
 
     METHODS.each do |method_name|
       define_method method_name do
-        raw_hash[method_name.to_s.camelcase(:lower)]
+        memoize_results("@#{method_name}") do
+          raw_hash[method_name.to_s.camelcase(:lower)]
+        end
+      end
+    end
+
+    INTERVALS.each do |interval|
+      define_method "#{interval.downcase}?" do
+        interval == self.interval
       end
     end
 

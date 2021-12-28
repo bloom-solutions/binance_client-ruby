@@ -30,7 +30,7 @@ module BinanceClient
     its(:address_tag) { is_expected.to eq "tag" }
     its(:amount) { is_expected.to eq "139.04370000" }
     its(:coin) { is_expected.to eq "USDT" }
-    its(:insert_time) { is_expected.to eq 1566791463000 }
+    its(:insert_time) { is_expected.to eq Time.at(1566791463000/1000) }
     its(:network) { is_expected.to eq "ETH" }
     its(:status) { is_expected.to eq 1 }
     its(:tx_id) { is_expected.to eq "0x575" }
