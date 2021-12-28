@@ -62,7 +62,12 @@ module BinanceClient
 
     describe "#network_list" do
       it "is an array of Network" do
-        expect(coin.network_list.first.coin).to eq "BTC"
+        network = coin.network_list.first
+
+        aggregate_failures do
+          expect(network).to be_a Network
+          expect(network.withdraw_fee).to be_present
+        end
       end
     end
 

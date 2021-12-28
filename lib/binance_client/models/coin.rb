@@ -62,7 +62,7 @@ module BinanceClient
 
     def network_list
       @network_list ||= raw_hash["networkList"].map do |network_hash|
-        Network.new(raw_hash: raw_hash)
+        Network.new(raw_hash: network_hash)
       end
     end
 
