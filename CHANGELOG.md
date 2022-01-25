@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Deposit history and Deposit return sub account IDs that are integers
 
+### Added
+- `#sub_account_bnb_burn_status` that gets the BNB burn status of a sub-account
+
 ## [3.0.1]
 ### Fixed
 - `Coin#network_list` is initialized properly

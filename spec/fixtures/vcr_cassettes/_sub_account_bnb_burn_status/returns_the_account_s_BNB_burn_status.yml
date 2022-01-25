@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/sapi/v1/broker/subAccount/bnbBurn/status?recvWindow=60000&signature=001585c556c05ec58f62db4366e3e1059474b3dd735191dcc715f11a0525c1e6&subAccountId=[sub_account_id]&timestamp=1643116891940"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '54'
+      Date:
+      - Tue, 25 Jan 2022 13:21:33 GMT
+      Server:
+      - nginx
+      X-Sapi-Used-Ip-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 203715eee1aff29c3cd146fbb151966c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SIN5-C1
+      X-Amz-Cf-Id:
+      - m67R5fEw9KWDUeoK0-2oAsd6WFIdhxpJCMCvnndwy2AuWdIwanftbA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"subAccountId":[sub_account_id],"spotBNBBurn":true}'
+  recorded_at: Tue, 25 Jan 2022 13:21:33 GMT
+recorded_with: VCR 6.0.0

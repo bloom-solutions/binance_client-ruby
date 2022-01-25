@@ -12,6 +12,7 @@ module BinanceClient
     api_action :sub_account_assets, args: [:email]
     api_action :sub_account_deposit_address, args: [:email, :coin]
     api_action :sub_account_deposit_history
+    api_action :sub_account_bnb_burn_status, args: [:sub_account_id]
 
     attribute :host
     attribute :api_key
