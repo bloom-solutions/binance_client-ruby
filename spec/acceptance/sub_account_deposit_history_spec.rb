@@ -29,7 +29,7 @@ RSpec.describe "#sub_account_deposit_history", vcr: {record: :once} do
 
       deposit = deposits.sample
       aggregate_failures do
-        expect(deposit.sub_account_id).to be_a String
+        expect(deposit.sub_account_id).to be_an Integer
         expect(deposit.status).to be_a Integer
       end
     end
@@ -57,7 +57,7 @@ RSpec.describe "#sub_account_deposit_history", vcr: {record: :once} do
 
       deposit = deposits.sample
       aggregate_failures do
-        expect(deposit.sub_account_id).to be_a String
+        expect(deposit.sub_account_id).to be_an Integer
         expect(deposit.status).to be_a Integer
       end
     end

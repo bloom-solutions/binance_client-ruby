@@ -2,7 +2,6 @@ module BinanceClient
   class Deposit < BaseModel
 
     METHODS = %i[
-      sub_account_id
       address
       address_tag
       amount
@@ -30,6 +29,10 @@ module BinanceClient
           raw_hash[method_name.to_s.camelcase(:lower)]
         end
       end
+    end
+
+    def sub_account_id
+      raw_hash["subAccountId"].to_i
     end
 
     def insert_time

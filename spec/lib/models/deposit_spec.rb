@@ -25,7 +25,7 @@ module BinanceClient
 
     subject(:deposit) { described_class.new(raw_hash: raw_hash) }
 
-    its(:sub_account_id) { is_expected.to eq "1" }
+    its(:sub_account_id) { is_expected.to eq 1 }
     its(:address) { is_expected.to eq "0xddc66e4313fd6c737b6cae67cad90bb4e0ac7092" }
     its(:address_tag) { is_expected.to eq "tag" }
     its(:amount) { is_expected.to eq "139.04370000" }
