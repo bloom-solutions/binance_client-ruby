@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - `#sub_account_bnb_burn_status` that gets the BNB burn status of a sub-account
+- `#sub_account_set_bnb_burn_status` set the BNB burn status of a sub-account
 
 ## [3.0.1]
 ### Fixed
