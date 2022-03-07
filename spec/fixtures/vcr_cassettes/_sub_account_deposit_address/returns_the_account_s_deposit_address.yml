@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: "[host]/sapi/v1/capital/deposit/subAddress?coin=BTC&email=[sub_account_email]&recvWindow=60000&signature=9f13b8274abc9d73115443501168db74a01c49e8424d3613f890b8e218850e92&timestamp=1640668070176"
+    uri: "[host]/sapi/v1/capital/deposit/subAddress?coin=BTC&email=[sub_account_email]&network=BNB&recvWindow=60000&signature=f5735ed0cb3a2056df616490bfd42a7144fac8607fe822b68456733b80dc637e&timestamp=1646627132960"
     body:
       encoding: US-ASCII
       string: ''
@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '152'
+      - '175'
       Date:
-      - Tue, 28 Dec 2021 05:07:50 GMT
+      - Mon, 07 Mar 2022 04:25:33 GMT
       Server:
       - nginx
       X-Sapi-Used-Ip-Weight-1m:
@@ -57,13 +57,13 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 ef580dc211b3c53b8a241527f1dd5f63.cloudfront.net (CloudFront)
+      - 1.1 101fe44f3abacff135b2a73264d75b1e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - MNL50-C1
+      - SIN5-C1
       X-Amz-Cf-Id:
-      - MysCOhl4Io6RP8mT5pEl3AUreQItxXdn7j7Ruv5JmsmjYulePGIdSQ==
+      - jz22CKikb48V4TC_gQn3XMyNegoCvAcUnvMgkvb2X02SIHaRl3fn0w==
     body:
       encoding: ASCII-8BIT
-      string: '{"coin":"BTC","address":"1C1Gfnfrxgyv5QsSPxoZMpfybBjbXsvPRA","tag":"","url":"https://blockchair.com/bitcoin/address/1C1Gfnfrxgyv5QsSPxoZMpfybBjbXsvPRA"}'
-  recorded_at: Tue, 28 Dec 2021 05:07:50 GMT
+      string: '{"coin":"BTC","address":"bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23","tag":"100159781","url":"https://explorer.binance.org/address/bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23"}'
+  recorded_at: Mon, 07 Mar 2022 04:25:33 GMT
 recorded_with: VCR 6.0.0
