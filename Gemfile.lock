@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    binance_client (3.0.1)
+    binance_client (4.0.0)
       activesupport
       api_client_base (~> 1.11)
       typhoeus
@@ -39,7 +39,7 @@ GEM
       ffi (>= 1.15.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
-    ffi (1.15.4)
+    ffi (1.15.5)
     gem_config (0.3.2)
     hashdiff (1.0.1)
     i18n (1.8.11)
@@ -102,4 +102,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.2.28
+   2.2.29
