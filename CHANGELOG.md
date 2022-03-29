@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - `#sub_account_bnb_burn_status`
+- `#sub_account_set_spot_bnb_burn`
 
 ## [4.0.0]
 ### Added

@@ -13,6 +13,9 @@ module BinanceClient
     api_action :sub_account_deposit_address
     api_action :sub_account_deposit_history
     api_action :sub_account_bnb_burn_status, args: [:sub_account_id]
+    api_action(:sub_account_set_spot_bnb_burn, {
+      args: [:sub_account_id, :spot_bnb_burn_status],
+    })
 
     attribute :host
     attribute :api_key
