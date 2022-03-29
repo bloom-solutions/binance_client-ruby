@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `#sub_account_bnb_burn_status`
 - `#sub_account_set_spot_bnb_burn`
+- `#sub_account_transfer`
 
 ### Changed
 - `Deposit#sub_account_id` is an Integer and no longer a String. Consistent with sub_account_id everywhere else

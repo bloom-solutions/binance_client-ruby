@@ -82,6 +82,7 @@ GEM
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
+    wait (0.5.3)
     webmock (3.9.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -99,6 +100,7 @@ DEPENDENCIES
   rspec (~> 3.0)
   rspec-its
   vcr
+  wait
   webmock
 
 BUNDLED WITH
