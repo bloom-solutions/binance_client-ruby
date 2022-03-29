@@ -1,7 +1,7 @@
 ---
 host: "https://api.binance.com"
 
-# Generic API keys, most likely the master key
+# Master API keys
 api_key: "your key"
 api_secret: "your secret"
 
