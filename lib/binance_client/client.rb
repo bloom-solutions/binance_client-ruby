@@ -16,6 +16,7 @@ module BinanceClient
     api_action(:sub_account_set_spot_bnb_burn, {
       args: [:sub_account_id, :spot_bnb_burn_status],
     })
+    api_action :create_sub_account
 
     attribute :host
     attribute :api_key
