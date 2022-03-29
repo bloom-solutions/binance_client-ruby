@@ -1,8 +1,12 @@
 module BinanceClient
   class Deposit < BaseModel
 
+    attribute(:sub_account_id, Integer, {
+      lazy: true,
+      default: :default_sub_acccount_id,
+    })
+
     METHODS = %i[
-      sub_account_id
       address
       address_tag
       amount
@@ -22,6 +26,10 @@ module BinanceClient
       kwargs.each do |key, value|
         self.send("#{key}=", value)
       end
+    end
+
+    def default_sub_acccount_id
+      raw_hash["subAccountId"]
     end
 
     METHODS.each do |method_name|
