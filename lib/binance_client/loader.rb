@@ -22,6 +22,7 @@ module BinanceClient
     def requests
       require "binance_client/requests/base_request"
       require "binance_client/requests/authenticated_base_request"
+      require "binance_client/requests/base_create_order_request"
       Dir[File.join(binance_client_dir, "requests/*.rb")].each do |f|
         require f
       end
@@ -29,6 +30,7 @@ module BinanceClient
 
     def responses
       require "binance_client/responses/base_response"
+      require "binance_client/responses/base_create_order_response"
       Dir[File.join(binance_client_dir, "responses/*.rb")].each do |f|
         require f
       end
