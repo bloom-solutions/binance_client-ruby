@@ -10,8 +10,11 @@ RSpec.describe "#sub_account_deposit_address", vcr: {record: :once} do
   end
 
   it "returns the account's deposit address" do
-    response =
-      client.sub_account_deposit_address(email: CONFIG[:sub_account_email], coin: "BTC", network: "BNB")
+    response = client.sub_account_deposit_address(
+      email: CONFIG[:sub_account_email],
+      coin: "BTC",
+      network: "BNB",
+    )
     expect(response).to be_success
 
     deposit_address = response.deposit_address
