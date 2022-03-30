@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `#sub_account_create_api_keys`
 - `#create_test_order`
 - `#create_order`
+- `#withdraw`
 
 ### Changed
 - `Deposit#sub_account_id` is an Integer and no longer a String. Consistent with sub_account_id everywhere else
