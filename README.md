@@ -35,7 +35,7 @@ We provide one method per API endpoint.
 client.system_status
 client.account_snapshot
 client.coins_info
-client.book_ticker(symbol: "BTCETH")
+client.book_ticker("BTCETH")
 client.order_book_depth(symbol: "BTCUSDT", limit: 100)
 ```
 

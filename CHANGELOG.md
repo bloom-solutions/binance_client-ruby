@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - `Deposit#sub_account_id` is an Integer and no longer a String. Consistent with sub_account_id everywhere else
+- `#book_ticker`
+  - accepts symbol as only arg or no args
+  - response has `#book_tickers` that is used to access tickers whether or not a symbol was passed in
 
 ## [4.0.0]
 ### Added

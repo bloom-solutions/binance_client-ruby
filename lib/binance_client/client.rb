@@ -7,7 +7,7 @@ module BinanceClient
     api_action :account_snapshot
     api_action :coins_info
     api_action :exchange_info
-    api_action :book_ticker
+    api_action :book_ticker, args: [:symbol]
     api_action :order_book_depth
     api_action :sub_account_assets, args: [:email]
     api_action :sub_account_deposit_address

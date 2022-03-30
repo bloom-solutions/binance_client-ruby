@@ -18,7 +18,7 @@ RSpec.describe "Proxy support", vcr: {record: :once} do
   end
 
   it "uses the proxy" do
-    response = client.book_ticker(symbol: "BTCUSDT")
+    response = client.book_ticker("BTCUSDT")
 
     # Don't know how to check for proxy usage any other way, so just ensure
     # the request has it defined properly since APIClientBase just takes it

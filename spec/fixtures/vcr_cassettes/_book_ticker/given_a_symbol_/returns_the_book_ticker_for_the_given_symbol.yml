@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/api/v3/ticker/bookTicker?symbol=ETHBTC"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '112'
+      Date:
+      - Wed, 30 Mar 2022 23:05:30 GMT
+      Server:
+      - nginx
+      X-Mbx-Uuid:
+      - 0b99273a-4d0c-4182-967a-52b7d9d62540
+      X-Mbx-Used-Weight:
+      - '1'
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ea827cc38a1fdbc5065cccdf5462ba3a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MNL50-C1
+      X-Amz-Cf-Id:
+      - SsxHUiLzkU8CGJc8U6qahQmUYgrZLfJ4--WR3S6z89hIW3AkPsQrWw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"ETHBTC","bidPrice":"0.07190900","bidQty":"8.59890000","askPrice":"0.07191000","askQty":"14.54590000"}'
+  recorded_at: Wed, 30 Mar 2022 23:05:30 GMT
+recorded_with: VCR 6.0.0
