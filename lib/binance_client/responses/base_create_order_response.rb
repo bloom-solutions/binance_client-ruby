@@ -17,6 +17,12 @@ module BinanceClient
     attribute :type, String, lazy: true, default: :default_type
     attribute :side, String, lazy: true, default: :default_side
 
+    def fills
+      @fills ||= body["fills"].map do |fill_entry|
+        OrderFill.new_from_raw_hash(fill_entry)
+      end
+    end
+
     private
 
     {

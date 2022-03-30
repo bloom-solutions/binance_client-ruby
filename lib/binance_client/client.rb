@@ -20,6 +20,7 @@ module BinanceClient
     api_action :sub_account_transfer
     api_action :sub_account_create_api_keys
     api_action :create_test_order
+    api_action :create_order
 
     attribute :host
     attribute :api_key
