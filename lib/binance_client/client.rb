@@ -18,6 +18,7 @@ module BinanceClient
     })
     api_action :create_sub_account
     api_action :sub_account_transfer
+    api_action :sub_account_create_api_keys
 
     attribute :host
     attribute :api_key
