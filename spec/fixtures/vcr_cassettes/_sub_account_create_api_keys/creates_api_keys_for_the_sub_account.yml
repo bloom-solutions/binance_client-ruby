@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "[host]/sapi/v1/broker/subAccountApi?canTrade=true&futuresTrade=false&marginTrade=false&recvWindow=60000&signature=01779394e8dd773fcc1d52c6f6faf6e6817854e71bb43caa9708273f7a12ecfa&subAccountId=[sub_account_id]&timestamp=1648603550608"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '249'
+      Date:
+      - Wed, 30 Mar 2022 01:25:51 GMT
+      Server:
+      - nginx
+      X-Sapi-Used-Ip-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 07dab2b83c886aebce4df13d4ada46f8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MNL50-C1
+      X-Amz-Cf-Id:
+      - 9NZRiUmX-94SEvHszojJIc6Eem7R1hn2Pdx6ibSFZc2oskYW2bCDgw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"apiKey":"C2s5OFJAumQjuf2DqckwAHLd8xSL5l7uf4VBEQbSpHrf8t8heJWKLp8pSaCL090h","secretKey":"d2qepgvbiyxIU0IzS2d4CBoos7DSsHfSa9YYCvH10T2NdBRYlY9CqP75SABZMnSA","subaccountId":"[sub_account_id]","canTrade":true,"marginTrade":false,"futuresTrade":false}'
+  recorded_at: Wed, 30 Mar 2022 01:25:51 GMT
+recorded_with: VCR 6.0.0

@@ -3,6 +3,7 @@ module BinanceClient
     include APIClientBase::Response.module
 
     attribute :body, Object, lazy: true, default: :default_body
+    attribute :message, String, lazy: true, default: :default_message
 
     def used_weights
       @used_weights ||= headers.each_with_object({}) do |(key, value), hash|
@@ -12,8 +13,8 @@ module BinanceClient
       end
     end
 
-    def message
-      body["message"]
+    def default_message
+      body["message"].presence || body["msg"]
     end
 
     def body_code

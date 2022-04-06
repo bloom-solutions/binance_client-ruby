@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "[host]/api/v3/order/test?quantity=0.0005&recvWindow=60000&side=SELL&signature=cba4ba5b916dcb243a424337e69da762c94005d8723c1df4b86e352980c6132e&symbol=BTCUSDT&timestamp=1648632951408&type=MARKET"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[sub_account_api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '2'
+      Date:
+      - Wed, 30 Mar 2022 09:35:51 GMT
+      Server:
+      - nginx
+      X-Mbx-Uuid:
+      - 0f6f4b83-b53b-4d80-807d-4424d328de56
+      X-Mbx-Used-Weight:
+      - '2'
+      X-Mbx-Used-Weight-1m:
+      - '2'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 fec87288bd626f32b2e1177a1ee70226.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MNL50-C1
+      X-Amz-Cf-Id:
+      - mcJ0s5l9VZ2Tav5gt-0I3jEdiYPVDmInEmurTtvcyyT5NaXl2Dod8g==
+    body:
+      encoding: ASCII-8BIT
+      string: "{}"
+  recorded_at: Wed, 30 Mar 2022 09:35:51 GMT
+recorded_with: VCR 6.0.0

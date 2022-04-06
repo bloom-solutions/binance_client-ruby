@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- `#sub_account_bnb_burn_status`
+- `#sub_account_set_spot_bnb_burn`
+- `#sub_account_transfer`
+- `#sub_account_create_api_keys`
+- `#create_test_order`
+- `#create_order`
+- `#withdraw`
+
+### Changed
+- `Deposit#sub_account_id` is an Integer and no longer a String. Consistent with sub_account_id everywhere else
+- `#book_ticker`
+  - accepts symbol as only arg or no args
+  - response has `#book_tickers` that is used to access tickers whether or not a symbol was passed in
+
 ## [4.0.0]
 ### Added
 - Add optional `network` parameter when getting deposit address of a specific network

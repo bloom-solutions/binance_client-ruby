@@ -5,6 +5,7 @@ require "pathname"
 require "yaml"
 require "rspec/its"
 require "factory_bot"
+require "wait"
 require "binance_client/factories"
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))

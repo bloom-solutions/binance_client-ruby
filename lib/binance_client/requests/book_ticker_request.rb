@@ -7,7 +7,9 @@ module BinanceClient
     end
 
     def params
-      {symbol: symbol}.to_query
+      {}.tap do |hash|
+        hash[:symbol] = symbol if symbol
+      end.to_query
     end
   end
 end
