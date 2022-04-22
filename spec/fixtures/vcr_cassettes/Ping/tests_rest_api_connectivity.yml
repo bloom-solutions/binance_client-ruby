@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/api/v3/ping"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '2'
+      Date:
+      - Wed, 06 Apr 2022 05:10:01 GMT
+      Server:
+      - nginx
+      X-Mbx-Uuid:
+      - 0b99273a-4d0c-4182-967a-52b7d9d62540
+      X-Mbx-Used-Weight:
+      - '1'
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1713453d529f258d1a5617b5179f82c4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MNL50-C1
+      X-Amz-Cf-Id:
+      - askgF5giY3cM4Utz9Iojx9GFk60OCC1o2t6kPiUIn_2vBVxAaFCm1A==
+    body:
+      encoding: ASCII-8BIT
+      string: "{}"
+  recorded_at: Wed, 06 Apr 2022 05:10:02 GMT
+recorded_with: VCR 6.0.0

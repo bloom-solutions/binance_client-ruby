@@ -22,6 +22,7 @@ module BinanceClient
     api_action :create_test_order
     api_action :create_order
     api_action :withdraw
+    api_action :ping
 
     attribute :host
     attribute :api_key
