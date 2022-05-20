@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    binance_client (5.1.0)
+    binance_client (5.2.0)
       activesupport
       api_client_base (~> 1.11)
       typhoeus
