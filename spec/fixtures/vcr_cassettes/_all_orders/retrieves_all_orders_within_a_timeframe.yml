@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/api/v3/allOrders?recvWindow=60000&signature=8a07b5465420483da428967c879d41315ebc6e4eece62a37ea4c8e0b99184424&startTime=1651298308000&symbol=ETHUSDT&timestamp=1653026338449"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - gqaPuYPGwGhA5y7MtELQuir0Ua0E6gITtAEis7JQV8ABJbJzsBT5ZLjzjQyxwRAf
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '440'
+      Date:
+      - Fri, 20 May 2022 05:58:58 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Uuid:
+      - d0772efd-3c92-4a87-b18f-89bd2bf82372
+      X-Mbx-Used-Weight:
+      - '30'
+      X-Mbx-Used-Weight-1m:
+      - '30'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e8cd61c9b2a785e4fc8167b0177016b8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SIN2-C1
+      X-Amz-Cf-Id:
+      - 32GgHwVkd4NzR5Yqh63_vmax7smKjASAaNrA-OVN9uA5uGHt0I0zkw==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"symbol":"ETHUSDT","orderId":8848559626,"orderListId":-1,"clientOrderId":"web_5a1ebca8b224446993b0ca14abef4cf5","price":"0.00000000","origQty":"1.20000000","executedQty":"1.20000000","cummulativeQuoteQty":"2769.10800000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"BUY","stopPrice":"0.00000000","icebergQty":"0.00000000","time":1652148725960,"updateTime":1652148725960,"isWorking":true,"origQuoteOrderQty":"0.00000000"}]'
+  recorded_at: Fri, 20 May 2022 05:58:58 GMT
+recorded_with: VCR 6.0.0
