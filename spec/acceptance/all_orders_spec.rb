@@ -13,5 +13,18 @@ RSpec.describe "#all_orders", vcr: { record: :once } do
     response = client.all_orders("ETHUSDT", "1651298308000")
 
     expect(response).to be_success
+    
+    orders = response.orders
+    order = orders.first
+    
+    aggregate_failures do
+      expect(orders).to be_present
+      expect(orders).to_not be_empty
+      expect(order.order_id).to be_a(Integer)
+      expect(order.executed_quantity).to be_a(String)
+      expect(order.cummulative_quote_quantity).to be_a(String)
+      expect(order.symbol).to be_a(String)
+      expect(order.symbol).to be_a(String)
+    end
   end
 end
