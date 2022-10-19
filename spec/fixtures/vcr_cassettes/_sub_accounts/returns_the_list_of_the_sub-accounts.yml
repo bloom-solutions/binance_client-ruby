@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[host]/sapi/v1/broker/subAccount?page=&recvWindow=60000&signature=1ff043f2ead38e6d2b78ad85bdc954ae2c9c487911378221f433ae415da4f5e8&size=&subAccountId=&timestamp=1666151410751"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      X-Mbx-Apikey:
+      - "[api_key]"
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '9399'
+      Date:
+      - Wed, 19 Oct 2022 03:50:11 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Sapi-Used-Ip-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 044db435c889c784fb7699a7b74ad574.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HKG62-C2
+      X-Amz-Cf-Id:
+      - q5soW1IScz5csWl2MGUXQhNidlTMgRfTwqpBOZd7E_nJtJ61HwP7Sw==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"subaccountId":"578779914796220416","email":"dev_83203283_99324449_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1615950284000},{"subaccountId":"582167010586488832","email":"dev_83203283_105085698_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1616757831000},{"subaccountId":"583090282236641281","email":"dev_83203283_106431580_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"0.0010","marginTakerCommission":"0.0010","createTime":1616977956000},{"subaccountId":"[sub_account_id]","email":"[sub_account_email]","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1616987044000},{"subaccountId":"583128890104131584","email":"dev_83203283_106477916_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1616987161000},{"subaccountId":"598773568203964417","email":"dev_83203283_152581537_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1620717143000},{"subaccountId":"598789432997163008","email":"dev_83203283_152675395_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1620720925000},{"subaccountId":"616095626058633216","email":"dev_83203283_183299692_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1624847043000},{"subaccountId":"2486317295995277569","email":"dev_83203283_191362275_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1626154459000},{"subaccountId":"2508222620863310080","email":"dev_83203283_196777998_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1627460118000},{"subaccountId":"2541618905657914112","email":"dev_83203283_207205967_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1629450692000},{"subaccountId":"2548682843133427968","email":"dev_83203283_209851363_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1629871735000},{"subaccountId":"2560284026028746753","email":"dev_83203283_215359713_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1630563219000},{"subaccountId":"2570545509443852545","email":"dev_83203283_222516000_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1631174851000},{"subaccountId":"2611180996263398912","email":"dev_83203283_283711929_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1633596915000},{"subaccountId":"2616867967569500417","email":"dev_83203283_286802994_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1633935885000},{"subaccountId":"2640245309243547649","email":"dev_83203283_299890891_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1635329283000},{"subaccountId":"2669041451109018368","email":"dev_83203283_331376651_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637045667000},{"subaccountId":"2677543881569106177","email":"dev_83203283_340285602_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637552451000},{"subaccountId":"2677559567522764032","email":"dev_83203283_340285656_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637553386000},{"subaccountId":"2677605939343337729","email":"dev_83203283_340285974_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637556150000},{"subaccountId":"2677621344546641921","email":"dev_83203283_340286026_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637557069000},{"subaccountId":"2677798201949953793","email":"dev_83203283_340287246_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637567610000},{"subaccountId":"2677800167267156993","email":"dev_83203283_340287265_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637567727000},{"subaccountId":"2679066535350568705","email":"dev_83203283_341536804_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637643209000},{"subaccountId":"2679067091765121792","email":"dev_83203283_341536809_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1637643242000},{"subaccountId":"2790740871645851648","email":"dev_83203283_403207412_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1644299518000},{"subaccountId":"2830100995250548992","email":"dev_83203283_418671111_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1646645564000},{"subaccountId":"2850161852596905984","email":"dev_83203283_424715081_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1647841284000},{"subaccountId":"2862271556971978241","email":"dev_83203283_429459278_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648563079000},{"subaccountId":"2862285717948915200","email":"dev_83203283_429460227_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648563923000},{"subaccountId":"2862909225373885696","email":"dev_83203283_429844578_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648601087000},{"subaccountId":"2862918971892944385","email":"dev_83203283_429844671_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648601668000},{"subaccountId":"2862920239826092289","email":"dev_83203283_429844680_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648601743000},{"subaccountId":"2862925167317303040","email":"dev_83203283_429844722_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648602037000},{"subaccountId":"2862926285957867009","email":"dev_83203283_429844732_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648602104000},{"subaccountId":"2862933289803451136","email":"dev_83203283_429844770_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648602521000},{"subaccountId":"2862934336988798465","email":"dev_83203283_429844778_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1648602584000},{"subaccountId":"2873206618946690560","email":"dev_83203283_433153441_brokersubuser@bloom.solutions","makerCommission":"0.0010","takerCommission":"0.0010","marginMakerCommission":"-1","marginTakerCommission":"-1","createTime":1649214859000}]'
+  recorded_at: Wed, 19 Oct 2022 03:50:11 GMT
+recorded_with: VCR 6.0.0

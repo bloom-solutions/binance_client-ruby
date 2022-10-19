@@ -25,6 +25,7 @@ module BinanceClient
     api_action :withdraw
     api_action :ping
     api_action :all_orders, args: [:symbol, :start_time]
+    api_action :sub_accounts
 
     attribute :host
     attribute :api_key
